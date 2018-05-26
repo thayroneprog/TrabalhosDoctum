@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Calcular/" targetNamespace="http://Calcular/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Fatorial" type="tns:Fatorial" />
+  <xs:element name="FatorialResponse" type="tns:FatorialResponse" />
+  <xs:complexType name="Fatorial">
+    <xs:sequence>
+      <xs:element name="numero" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FatorialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

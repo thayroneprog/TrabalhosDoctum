@@ -12,13 +12,10 @@ import com.sun.xml.wss.impl.callback.PasswordValidationCallback.PlainTextPasswor
 
 
 public class CustomValidator implements PasswordValidator {
-
     @Override
     public boolean validate(PasswordValidationCallback.Request rqst) throws PasswordValidationCallback.PasswordValidationException {
        PlainTextPasswordRequest req;
         req = (PlainTextPasswordRequest)rqst;
        return (req.getUsername().equals("user") && req.getPassword().equals("pwd"));
     }
-
-    
 }
